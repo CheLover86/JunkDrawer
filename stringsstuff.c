@@ -80,13 +80,14 @@ int my_printf(const char *format, ...) {
 		else {
 			ptr++;
 			switch (*ptr) {
-				case 'c':
+				case 'c': {
 					int ch = va_arg(args, int);
 					print_to_screen(ch);
 					count++;
 					ptr++;
 					break;
-				case 's':
+				}
+				case 's': {
 					char *str = va_arg(args, char *);
 					while (*str != '\0') {
 						print_to_screen(*str);
@@ -95,8 +96,9 @@ int my_printf(const char *format, ...) {
 					}
 					ptr++;
 					break;
+				}
 				case 'i':
-				case 'd':
+				case 'd': {
 					int num = va_arg(args, int);
 					if (num == 0) {
 						print_to_screen('0');
@@ -128,6 +130,7 @@ int my_printf(const char *format, ...) {
 					}
 					ptr++;
 					break;
+				}
 				case '%':
 					print_to_screen(*ptr);
 					count++;
