@@ -137,7 +137,7 @@ int my_printf(const char *format, ...) {
 					ptr++;
 					break;
 				default:
-					ptr;
+					ptr++;
 					break;
 			}
 		}
