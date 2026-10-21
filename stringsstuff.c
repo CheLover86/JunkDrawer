@@ -99,8 +99,9 @@ int my_printf(const char *format, ...) {
 				case 'd':
 					int num = va_arg(args, int);
 					if (num == 0) {
-						count++;
 						print_to_screen('0');
+						count++;
+						ptr++;
 						break;
 					}
 					else {
