@@ -8,3 +8,6 @@ With both malloc and free, you are now able to allocate memory and free it! Uses
 
 # StatsCalc
 Quick calculator that computes Mean, Min, max of a vector. 
+
+# Mini_ctype
+Another collection of functions, for characters! 
