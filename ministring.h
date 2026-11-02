@@ -12,5 +12,7 @@ int my_strcmp(const char *s1, const char *s2);
 int my_memcmp(const void *s1, const void *s2, size_t n);
 char *my_strstr(const char *haystack, const char *needle);
 void *my_memset(void *b, int c, size_t len);
+char *my_strchr(const char *s, int c);
+
 
 #endif
