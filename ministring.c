@@ -150,3 +150,21 @@ void *my_memset(void *b, int c, size_t len) {
 
 	return b;
 }
+
+char *my_strchr(const char *s, int c) {
+	const char *tmp_s = s;
+
+	while (*tmp_s != '\0') {
+		if (*tmp_s == (char)c) {
+			return (char *)tmp_s;
+		}
+		tmp_s++;
+	}
+
+	if (*tmp_s != (char)c) {
+		return NULL;
+	}
+	else {
+		return (char *)tmp_s;
+	}
+}
