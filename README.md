@@ -11,3 +11,6 @@ Quick calculator that computes Mean, Min, max of a vector.
 
 # Mini_ctype
 Another collection of functions, for characters! 
+
+# Mini_stdio
+Had to make stdio! Love me some input/output
